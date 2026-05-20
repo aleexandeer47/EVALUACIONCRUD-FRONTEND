@@ -54,7 +54,7 @@ const ConfirmModal = ({ title, message, onConfirm, onCancel, isOpen = false, isD
             className={`rounded-2xl px-4 py-2 text-sm font-semibold text-white transition ${
               isDangerous
                 ? 'bg-red-600 hover:bg-red-700'
-                : 'bg-indigo-600 hover:bg-indigo-500'
+                : 'bg-black '
             }`}
           >
             Confirmar

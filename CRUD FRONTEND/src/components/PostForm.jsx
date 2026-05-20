@@ -103,7 +103,7 @@ const ProductForm = ({ initialData = {}, onSubmit, submitting = false, onClose }
               <button
                 type="submit"
                 disabled={submitting}
-                className="rounded-2xl bg-black px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-500 disabled:cursor-not-allowed disabled:bg-slate-400"
+                className="rounded-2xl bg-black px-4 py-2 text-sm font-semibold text-white transition disabled:cursor-not-allowed disabled:bg-slate-400"
               >
                 {submitting ? 'Guardando...' : isEditing ? 'Actualizar post' : 'Guardar post'}
               </button>

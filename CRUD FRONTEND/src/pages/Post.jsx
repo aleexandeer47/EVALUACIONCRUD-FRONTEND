@@ -341,7 +341,7 @@ const Post = () => {
                               type="button"
                               onClick={() => handleEditProduct(product.id)}
                               disabled={loadingProductDetail}
-                              className="rounded-full w-full bg-black px-3 py-1 text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:bg-slate-400"
+                              className="rounded-full w-full bg-black px-3 py-1 text-white transition disabled:cursor-not-allowed disabled:bg-slate-400"
                             >
                               Editar post
                             </button>
@@ -369,7 +369,7 @@ const Post = () => {
                       type="button"
                       onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
                       disabled={currentPage === 1}
-                      className="rounded-2xl border border-slate-200 bg-black px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-400 text-white"
+                      className="rounded-2xl border border-slate-200 bg-black px-4 py-2 text-sm font-medium text-slate-700 transition  disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-400 text-white"
                     >
                       Anterior
                     </button>
@@ -383,7 +383,7 @@ const Post = () => {
                           onClick={() => handlePageChange(page)}
                           className={`rounded-2xl px-4 py-2 text-sm font-medium transition ${
                             currentPage === page
-                              ? 'bg-indigo-600 text-white shadow-sm'
+                              ? 'bg-black text-white shadow-sm'
                               : 'bg-white text-slate-700 hover:bg-slate-100'
                           }`}
                         >
@@ -396,7 +396,7 @@ const Post = () => {
                       type="button"
                       onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
                       disabled={currentPage === totalPages}
-                      className="rounded-2xl border border-slate-200 bg-black px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-400  text-white"
+                      className="rounded-2xl border border-slate-200 bg-black px-4 py-2 text-sm font-medium text-slate-700 transition disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-400  text-white"
                     >
                       Siguiente
                     </button>
